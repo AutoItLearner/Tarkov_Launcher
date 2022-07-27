@@ -14,7 +14,7 @@ EndFunc
 ; Find a specific yellow pixel in order to move the mouse and click start game.
 Local $aCoord = PixelSearch(0, 0, 1422, 803, 0xCCC19C)
 If Not @error Then
-	MouseMove($aCoord[0], $aCoord[1]) ; Move the mouse cursor to the x, y position of 10, 100.
+	MouseMove($aCoord[0], $aCoord[1]) ; Move the mouse cursor to the x, y position.
 	Sleep(2000)
 	MouseClick($MOUSE_CLICK_LEFT)
 
